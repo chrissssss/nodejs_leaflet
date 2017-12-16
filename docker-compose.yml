@@ -1,0 +1,12 @@
+container1:
+  build: .
+  command: npm start
+  volumes:
+    - .:/usr/app/
+    - /usr/app/node_modules
+  ports:
+    - "3000:3000"
+  links:
+    - container2
+container2:
+  image: mongo:3.2

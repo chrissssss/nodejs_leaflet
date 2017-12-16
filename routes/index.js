@@ -5,7 +5,7 @@ var router = express.Router();
 var mongoose = require('mongoose');
 
 // Mongoose connection to MongoDB
-mongoose.connect('mongodb://localhost/leaflet_map', function (error) {
+mongoose.connect('mongodb://container2/leaflet_map', function (error) {
     if (error) {
         console.log(error);
     }
