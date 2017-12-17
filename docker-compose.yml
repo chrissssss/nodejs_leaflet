@@ -10,3 +10,5 @@ container1:
     - container2
 container2:
   image: mongo:3.2
+  volumes:
+    - ./data:/docker-entrypoint-initdb.d
